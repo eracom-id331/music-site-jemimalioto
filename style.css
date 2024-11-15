@@ -1,22 +1,160 @@
-/* ==============
-   Style de base
-   ============== */
-
-html {
-    color: #222;
-    background-color: #eee;
+/* Basic reset */
+* {
+  margin: 5px;
+  padding: 2px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-/* =======================
-   EXEMPLE de Media Query
-   ======================= */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  background-image: url(https://www.leadingvibe.com/dist/img/cover-bitw.jpg);
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+}
 
-@media only screen and (min-width: 800px) {
-
-    html {
-      background-color: #eae;
-    }
-
+/* Header and Navbar */
+header {
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
 
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f4a261;
+}
+
+/* Section styling */
+section {
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: bolder;
+  color: #ffffff16;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+h2 {
+  text-align: center;
+  margin: 1rem;
+  color: #ffffff;
+  letter-spacing: 0.5rem;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Music Section */
+
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
+}
+
+.music-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.music-item {
+  width: 200px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(111, 57, 3, 0.724);
+  max-width: 200px;
+
+}
+
+.music-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.get-it-btn {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f4a261;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+
+.get-it-btn:hover {
+  background-color: #e76f51;
+}
+
+/* Video Section */
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+}
+
+.video-container a {
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #f4a261;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.video-container a:hover {
+  background-color: #e76f51;
+}
+
+/* Biography and Contact */
+.bio-content, .contact-content {
+  text-align: center;
+  line-height: 1.6;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  margin-top: 2rem;
+}
